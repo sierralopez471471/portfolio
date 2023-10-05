@@ -3,17 +3,17 @@ import {Container, Row, Col, Image} from 'react-bootstrap'
 
 function About(){
     return (
-        <Container>
+        <Container style={{borderColor: "black", borderStyle: "solid"}}>
             <Row>
-                <Col xs={12} md={4}>
+                <Col xs={12} md={6} style={{borderColor: "black", borderStyle: "solid"}}>
                     <Image 
-                        src="/my-portfolio/src/assets/me.jpg" 
+                        src="/my-portfolio/src/assets/picMe.jpg" 
                         alt="Me" 
                         rounded 
                         fluid
                     />
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={12} md={6}>
                     <h2>About Me</h2>
                     <p>I'm a prospective Software Engineer 
                         looking for a Junior Developer position. 
@@ -30,7 +30,6 @@ function About(){
                         and frameworks that could be required of me 
                         in any professional position.</p>
                 </Col>
-                
             </Row>
         </Container>
     )
