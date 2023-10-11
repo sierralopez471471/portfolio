@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, Row, Col, Image} from 'react-bootstrap'
+import picMe from '../assets/picMe.jpg'
 
 function About(){
     return (
@@ -7,10 +8,12 @@ function About(){
             <Row>
                 <Col xs={12} md={6} style={{borderColor: "black", borderStyle: "solid"}}>
                     <Image 
-                        src="/my-portfolio/src/assets/picMe.jpg" 
+                        src={picMe} 
                         alt="Me" 
                         rounded 
                         fluid
+                        width="225"
+                        height="300"
                     />
                 </Col>
                 <Col xs={12} md={6}>
